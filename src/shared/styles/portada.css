@@ -1,7 +1,16 @@
 body {
     background-color: #252326;
     color: #ffffff;           
+    min-height: 100vh; 
+    margin: 0;
+    padding: 0;
+    background-image: url("../../public/img/descarga.jpg"); /* ajusta la ruta */
+    background-size: cover;        /* ocupa toda la pantalla */
+    background-position: center;   /* centrada */
+    background-repeat: no-repeat;  
+    background-attachment: fixed;  /* efecto elegante tipo parallax */
     min-height: 100vh;
+
 }
 h3 {
     color: #ffffff;
@@ -61,4 +70,9 @@ footer {
     background-color: #0d6efd;
     box-shadow: none;
     color: #ffffff;
+}
+img{
+
+
+
 }
