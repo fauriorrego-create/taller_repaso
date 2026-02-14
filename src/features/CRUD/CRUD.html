@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- CSS (sube 2 niveles hasta src y entra a shared) -->
+<link rel="stylesheet" href="../../shared/styles/style.css">
+
+<!-- Favicon (sube 3 niveles hasta raíz y entra a public) -->
+<link rel="shortcut icon" href="../../../public/img/681300.png" type="image/x-icon">
+
+<title>CRUD</title>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../../../index.html">Taller Repaso</a>
+
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="../../../index.html">Portada</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="CRUD.html">Crud</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../Callback/callback.html">CallBack</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../promesas/promesas.html">Promesas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../async_await/asyngawait.html">
+          Async Await
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../destructuracion_de_objetos/objdestructuring.html">
+          Object Destructuring
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Contenido -->
+<div class="container-fluid p-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 class="fw-bold mb-0">CRUD Datos</h3>
+
+        <div class="d-flex gap-2">
+            <button class="btn btn-warning" id="exportBtn">
+                Exportar Datos De Usuario
+            </button>
+            <button class="btn btn-danger" onclick="deleteAllUsers()">
+                Borrar Datos
+            </button>
+        </div>
+    </div>
+
+    <main class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card p-4">
+                <h1 class="fw-bold mb-2">Registro De Datos</h1>
+
+                <form id="dataForm">
+
+                    <div class="mb-3">
+                        <label class="form-label">Nombres</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Documento</label>
+                        <input type="text" class="form-control" id="document" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+
+                    <button class="btn btn-primary w-100" type="submit">
+                        Guardar
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <div class="card p-4 h-100">
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead>
+                            <tr class="text-secondary">
+                                <th>Nombre Completo</th>
+                                <th>Documento</th>
+                                <th>Correo</th>
+                                <th>Editar</th>
+                                <th>Borrar</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</div>
+
+<footer class="text-center py-3 mt-4">
+   Formulario básico
+</footer>
+
+<!-- JS (está en la misma carpeta) -->
+<script src="app.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

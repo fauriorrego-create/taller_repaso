@@ -1,0 +1,64 @@
+body {
+    background-color: #252326;
+    color: #ffffff;           
+    min-height: 100vh;
+}
+h3 {
+    color: #ffffff;
+}
+
+
+/*  Tarjetas */
+.card {
+    background-color: #ffffff; 
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(67, 66, 66, 0.08),
+    4px 4px 10px black;
+}
+
+/*  Inputs  */
+.form-control {
+    background-color: #ffffff;
+    border: 1px solid #b6c6e3;
+    color: #000000;
+}
+
+.form-control::placeholder {
+    color: #6c757d;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: none;
+}
+
+/* Tabla  */
+.table {
+    color: #000000;
+}
+
+.table thead {
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table-dark {
+    --bs-table-bg: #ffffff;
+    --bs-table-striped-bg: #f1f6ff;
+    --bs-table-hover-bg: #e2ecff;
+}
+
+table tbody tr:hover {
+    background-color: #e2ecff;
+}
+
+/* ===== Footer ===== */
+footer {
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+#boton{
+    background-color: #0d6efd;
+    box-shadow: none;
+    color: #ffffff;
+}

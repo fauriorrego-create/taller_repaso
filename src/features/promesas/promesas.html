@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- CSS (sube 2 niveles hasta src y entra a shared) -->
+<link rel="stylesheet" href="../../shared/styles/promesas.css">
+
+<!-- Favicon (sube 3 niveles hasta raíz) -->
+<link rel="shortcut icon" href="../../../public/img/681300.png" type="image/x-icon">
+
+<title>Promesas</title>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../../../index.html">Taller Repaso</a>
+
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+      <li class="nav-item">
+        <a class="nav-link" href="../../../index.html">Portada</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="../CRUD/CRUD.html">Crud</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="../Callback/callback.html">CallBack</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link active" href="promesas.html">Promesas</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="../async_await/asyngawait.html">
+          Async Await
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="../destructuracion_de_objetos/objdestructuring.html">
+          Object Destructuring
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+<main class="container my-5">
+
+  <h1 class="text-center mb-4">Actividades JavaScript</h1>
+
+  <div class="card mb-4 shadow">
+    <div class="card-body">
+      <h1 class="card-title">Actividad 4 - Promises</h1>
+
+      <p>
+        Una Promise representa una operación asíncrona que puede resolverse
+        (resolve) o rechazarse (reject).
+      </p>
+
+      <input type="text" id="cadena" class="form-control mb-3" placeholder="Ingresa una palabra">
+
+      <button class="btn btn-primary w-100" onclick="verificarVocal()">
+        Verificar Última Letra
+      </button>
+
+      <div class="mt-3">
+        <h2 id="resultadoPromise"></h2>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<!-- JS (está en la misma carpeta) -->
+<script src="promesas.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
